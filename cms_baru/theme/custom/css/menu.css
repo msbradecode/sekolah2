@@ -1,0 +1,67 @@
+
+.submenu2 {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    background-color: #f1f1f1;
+    width: 270px;
+	background: #fff;
+}
+
+.submenu-menu2 {
+    display: none;
+}
+
+/* Tampilkan submenu2 ketika mengarahkan kursor ke menu induk */
+ul.navigation li.dropdown ul li.dropdown:hover > ul.submenu2 {
+    display: block;
+}
+
+/* Tampilkan submenu-menu2 ketika mengarahkan kursor ke menu induk */
+ul.navigation li.dropdown ul li.dropdown ul.submenu2 li.submenu-menu2:hover > ul.submenu-menu2 {
+    display: block;
+}
+
+.submenu-menu2{
+    float: none;
+	margin: 0;
+	padding: 0;
+	position: relative;
+	/*width: 100%;*/
+	background: #000000;
+	border-right: none;
+}
+
+.main-menu .navigation li .submenu-menu2 a{
+    background: #ffffff none repeat scroll 0 0;
+    color: #000000;
+    display: block;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 20px;
+    padding: 12px 30px;
+    position: relative;
+    text-transform: capitalize;
+    transition: all 500ms ease 0s;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.main-menu-two .main-menu .navigation li.submenu-menu2 a {
+    padding : 12px 20px 12px 20px;
+}
+
+.main-menu-two .main-menu .navigation li.submenu-menu2 a:hover {
+    background: #f9b523;
+    /*color: #fff;*/
+}
+
+.main-menu-two .main-menu .navbar-collapse>ul li.dropdown ul li.dropdown .dropdown-btn{
+    top: 10px;
+    font-weight:bold;
+    padding-right: 10px;
+}
+
+.main-menu-two .main-menu .navbar-collapse>ul li.dropdown ul li.dropdown .dropdown-btn:focus{
+    color: #fff;
+}
